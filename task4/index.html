@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #8DCFED;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  .calculator {
+    height: 500px;
+    width: 619px;
+    background: #8DCFED;
+    padding: 40px;
+    box-shadow: 0px 8px #618698;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 123px);
+    grid-gap: 15px 15px;
+  }
+  .button {
+    height: 68px;
+    width: 123px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px #78A7BB;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #81898E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .display {
+    grid-column: span 3;
+    height: 68px;
+    width: 401px;
+    background: #78A7BB;
+    box-shadow: 0px 8px #618698;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    margin-bottom: 12px;
+    
+  }
+  .clear {
+    background: #FF9FA7;
+    box-shadow: 0px 8px #FF7B83;
+    color: #FFFFFF;
+  }
+  .equals {
+    background: #F1FF8B;
+    box-shadow: 0px 8px #9CAB44;
+    color: #81898E;
+  }
+  .operation {
+    background: #FFF0F5;
+    box-shadow: 0px 8px #78A7BB;
+    color: #81898E;
+  }
+</style>
+</head>
+<body>
+<div class="calculator">
+  <div class="button clear">C</div>
+  <div class="display">0</div>
+  <div class="button number">7</div>
+  <div class="button number">8</div>
+  <div class="button number">9</div>
+  
+  <div class="button operation">+</div>
+  
+  <div class="button number">4</div>
+  <div class="button number">5</div>
+  <div class="button number">6</div>
+  
+  <div class="button operation">-</div>
+  
+  <div class="button number">1</div>
+  <div class="button number">2</div>
+  <div class="button number">3</div>
+  <div></div>
+  
+  <div class="button number">0</div>
+  <div class="button">.</div>
+  <div class="button equals">=</div>
+</div>
+</body>
+</html>
